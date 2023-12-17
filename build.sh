@@ -8,7 +8,7 @@ then
 	exit 1
 fi
 
-output=$(grep -o "&Output:\w*[.]*\w*" $input | cut -d ':' -f 2)
+output=$(grep "&Output:\w*[.]*\w*" $input | cut -d ':' -f 2)
 
 if [ -z $output ]
 then
